@@ -1,16 +1,17 @@
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import CategoryCarousel from "@/components/CategoryCarousel";
-import RecommendedCars from "@/components/RecommendedCars";
+import HeaderMUI from "@/components/mui/HeaderMUI";
+import HeroSectionMUI from "@/components/mui/HeroSectionMUI";
+import CategoryCarouselMUI from "@/components/mui/CategoryCarouselMUI";
+import RecommendedCarsMUI from "@/components/mui/RecommendedCarsMUI";
+import { Box } from '@mui/material';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <HeroSection />
-      <CategoryCarousel />
-      <RecommendedCars />
-    </div>
+    <Box sx={{ minHeight: '100vh' }}>
+      <HeaderMUI />
+      <HeroSectionMUI />
+      <CategoryCarouselMUI />
+      <RecommendedCarsMUI />
+    </Box>
   );
 };
 
